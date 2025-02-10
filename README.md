@@ -34,7 +34,7 @@ Setup & Project Initialization
 -[x] Install necessary Django packages and dependencies.
 -[x] Set up version control with Git.
 Backend Development (Django)
--[ ] Set up Django models for users, bookings, and accommodation listings.
+-[x] Set up Django models for users, bookings.
 -[ ] Integrate Airbnb API to fetch accommodation data.
 -[ ] Create views and APIs for searching properties (location, price, etc.).
 -[ ] Implement user authentication (sign-up, login, password reset).

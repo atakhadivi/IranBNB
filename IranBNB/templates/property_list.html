@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Property Listings</title>
+</head>
+<body>
+    <h1>Properties in {{ location }}</h1>
+    {% if properties.data %}
+        <ul>
+            {% for property in properties.data %}
+                <li>
+                    <h2>{{ property.name }}</h2>
+                    <p>{{ property.summary }}</p>
+                    <p>Price: {{ property.price.rate }} {{ property.price.currency }}</p>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No properties found.</p>
+    {% endif %}
+</body>
+</html>
